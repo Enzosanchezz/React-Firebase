@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+### slogans
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🔴Develop using reactjs a component of type dropdown (or combobox)
+🔴The project must be run in a docker container
 
-## Available Scripts
+🔴The model in firebase will consist of the following attributes:
+1. name
+2. business name
+3. nit (cuit)
+4. phone
+5. code
+🔴When deployed, it will consult a firebase service looking for matches according to the written text (or without a filter, in case no text has been written).
 
-In the project directory, you can run:
+🔴Should request results paginated by 20 by 20, and should only fetch the next page when scrolling near the bottom of the current list of results.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🔴It must allow parameterizing by which attribute of the object will be searched. Parameterization should be done by code, not at runtime.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔴 The first result of the dropdown must be a fixed option that, when clicked, raises a small pop-up, part of the component, that allows adding a new object with the text already entered, but also allowing editing before saving.
 
-### `npm test`
+🔴Attach also within the repository, screenshots of the working solution.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### functionalities of the application
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The application allows you to query a firestore database filtering by different parameters which can be chosen in a Dropdown.
+It also allows you to register new companies using a form.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### start
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To start using the application, it is necessary to execute the **npm install** command, then once the installation is finished, execute the **npm start** command
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+![image](https://user-images.githubusercontent.com/95228414/207965374-a30d5c4a-1c31-4044-8674-4048289feabd.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![image](https://user-images.githubusercontent.com/95228414/207965529-320e68a4-92b1-4c87-88df-86ab9c3da95f.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![image](https://user-images.githubusercontent.com/95228414/207965629-9a97ef23-8a91-4191-a6d7-d4fe180013b3.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
