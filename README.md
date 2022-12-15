@@ -33,6 +33,13 @@ To start using the application, it is necessary to execute the **npm install** c
 
 ![image](https://user-images.githubusercontent.com/95228414/207964683-585977e9-8463-4a81-8589-880a6bb48c27.png)
 
+![image](https://user-images.githubusercontent.com/95228414/207964769-4df36f70-d871-4ea3-9e01-6e3c4e992f79.png)
+
+![image](https://user-images.githubusercontent.com/95228414/207964975-8720beba-d4ba-460b-b4cf-d58d879b582b.png)
+
+![image](https://user-images.githubusercontent.com/95228414/207965040-db561417-909b-4b24-b489-bdac86a34256.png)
+
+
 
 
 
