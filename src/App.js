@@ -10,8 +10,8 @@ function App() {
 
   return (
     <div className='App' >
+      <h1>Listado de Empresas registradas</h1>
       <SearchBar />
-      {/* <Form /> */}
       <Home />
     </div>
   );

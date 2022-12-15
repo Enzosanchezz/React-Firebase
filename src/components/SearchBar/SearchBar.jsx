@@ -3,9 +3,9 @@ import { useDispatch } from "react-redux";
 import { getItems, getItemsBy} from "../../actions";
 import Dropdown from "react-dropdown";
 import 'react-dropdown/style.css';
-import Swal from "sweetalert2";
 import Modal from 'react-modal';
 import Form from "../Form/Form";
+import style from "./search.module.css"
 
 
 
@@ -21,7 +21,7 @@ export default function SearchBar(){
         left: '50%',
         right: 'auto',
         bottom: 'auto',
-        marginRight: '-50%',
+        marginRight: '100%',
         transform: 'translate(-50%, -50%)',
       }}
 
@@ -50,6 +50,7 @@ export default function SearchBar(){
     }
     function closeModal(){
       setIsOpen(false)
+      localStorage.clear()
     }
 
     const options = [
@@ -91,17 +92,19 @@ export default function SearchBar(){
                   contentLabel="Example Modal"
               >
                   <h2>Registro</h2>
-                  <button onClick={closeModal}>cerrar</button>
                   <div>Completa los campos por favor</div>
                   <Form
                   nombre = {nombreRegistro}
                   />
+                  <button onClick={closeModal}>cerrar</button>
               </Modal>
             </div>
-            <Dropdown options={options} onChange={e => handleChange(e)} placeholder="Select an option" />
-            <button onClick={(e) => handleCharger(e)} >&nbsp;↻&nbsp;</button>
-            <input name="busqueda" type="text" placeholder="Busca..." onChange={e => handleInput(e)}/>
-            <button type="submit" onClick={e => {handleSubmit(e)}} >Buscar</button>
+            <div style={{margin: "2% 30%"}} >
+            <Dropdown className={style.drop} options={options} onChange={e => handleChange(e)} placeholder="Selecciona un parametro de busqueda" />
+            </div>
+            <button className={style.btn}  onClick={(e) => handleCharger(e)} >&nbsp;↻&nbsp;</button>
+            <input className={style.input} name="busqueda" type="text" placeholder="Busca..." onChange={e => handleInput(e)}/>
+            <button className={style.submit} type="submit" onClick={e => {handleSubmit(e)}} >Buscar</button>
 
 
         </div>

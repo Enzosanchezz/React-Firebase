@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { createItem } from '../../actions';
 
+
 export default function Form(name) {
     
     let nameRegis = !name.nombre ? "" : name.nombre
@@ -12,7 +13,6 @@ export default function Form(name) {
         telefono: "",
         codigo : "",
     })
-    console.log('empresa :>> ', empresa);
   const dispatch = useDispatch()
 
   const handleSubmit = (e) => {
