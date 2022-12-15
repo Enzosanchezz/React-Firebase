@@ -81,7 +81,7 @@ export default function SearchBar(){
       ];
 
     return(
-        <div >
+        <div className={style.div} >
 
              <div>
               <Modal
@@ -99,12 +99,12 @@ export default function SearchBar(){
                   <button onClick={closeModal}>cerrar</button>
               </Modal>
             </div>
-            <div style={{margin: "2% 30%"}} >
-            <Dropdown className={style.drop} options={options} onChange={e => handleChange(e)} placeholder="Selecciona un parametro de busqueda" />
+            <div className={style.searchBar} >
+                <button className={style.btn}  onClick={(e) => handleCharger(e)} >&nbsp;↻&nbsp;</button>
+                <input className={style.input} name="busqueda" type="text" placeholder="Busca..." onChange={e => handleInput(e)}/>
+                <Dropdown className={style.drop} options={options} onChange={e => handleChange(e)} placeholder="Selecciona un parametro de busqueda" />
+                <button className={style.submit} type="submit" onClick={e => {handleSubmit(e)}} >Buscar</button>
             </div>
-            <button className={style.btn}  onClick={(e) => handleCharger(e)} >&nbsp;↻&nbsp;</button>
-            <input className={style.input} name="busqueda" type="text" placeholder="Busca..." onChange={e => handleInput(e)}/>
-            <button className={style.submit} type="submit" onClick={e => {handleSubmit(e)}} >Buscar</button>
 
 
         </div>

@@ -4,13 +4,14 @@ import "./app.css";
 import Form from "./components/Form/Form";
 import Home from './components/Home/Home';
 import SearchBar from './components/SearchBar/SearchBar';
+import Header from './components/Header/Header';
 
 
 function App() {
 
   return (
     <div className='App' >
-      <h1>Listado de Empresas registradas</h1>
+      <Header />
       <SearchBar />
       <Home />
     </div>

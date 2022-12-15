@@ -2,7 +2,7 @@ import { collection, getDocs, query, doc, getDoc, addDoc, deleteDoc, updateDoc, 
 import Swal from "sweetalert2";
 export const db = getFirestore();
 
-
+ 
 export function getItems (payload){
     return async function(dispatch){
         let empresa = [];

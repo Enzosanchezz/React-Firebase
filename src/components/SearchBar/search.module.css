@@ -2,18 +2,44 @@
     width: 25%;
     margin:  1% 1%;
     padding: 0.5%;
-    border-radius: 5%;
+    border-radius: 25px;
     border-color: rgb(212, 212, 170);
     background-color: rgb(229, 228, 227);
 }
 .btn{
+    margin:  1% 1%;
     padding: 0.5%;
-    border-radius: 5%;
+    border-radius: 25px;
     background-color: black;
     color: white;
 }
 .submit{
+    border-radius: 25px;
+    margin:  1% 1%;
     padding: 0.5%;
-    border-radius: 5%;
     border-color: rgb(212, 212, 170);
+}
+.drop{
+    border-radius: 25px;
+    margin:  1% 1%;
+    width: 30%;
+}
+
+.searchBar{
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    margin:  2% 1%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.div{
+    display: flex;
+    justify-content: center;
 }
