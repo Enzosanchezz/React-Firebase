@@ -31,6 +31,9 @@ It also allows you to register new companies using a form.
 To start using the application, it is necessary to execute the **npm install** command, then once the installation is finished, execute the **npm start** command
 
 
+![image](https://user-images.githubusercontent.com/95228414/207964683-585977e9-8463-4a81-8589-880a6bb48c27.png)
+
+
 
 
 
