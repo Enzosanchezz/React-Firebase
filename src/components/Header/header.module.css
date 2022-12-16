@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: white;
+    color: black;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(64,185,217,1) 100%);
+}
+.div{
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 250px;
+    height: 150px;
+}
+  
