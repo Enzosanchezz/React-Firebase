@@ -7,7 +7,7 @@ export default function Header(props) {
     <div className={style.div} >
       <div className={style.header}>
         <img className={style.logo} src={logo} alt="Logo" />
-        <h1>{props.title}</h1>
+        <h1 className={style.font} >{props.title}</h1>
       </div>
     </div>
   );
