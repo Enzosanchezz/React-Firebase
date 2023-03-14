@@ -17,6 +17,9 @@ export default function SearchBar(){
     let nombreRegistro = localStorage.getItem("nombre")
     const customStyles = {
       content: {
+        marginTop: '10px',
+        background: 'rgb(142 189 195)',
+        borderRadius: '25px',
         top: '50%',
         left: '50%',
         right: 'auto',
@@ -91,12 +94,12 @@ export default function SearchBar(){
                   style={customStyles}
                   contentLabel="Example Modal"
               >
-                  <h2>Registro</h2>
-                  <div>Completa los campos por favor</div>
+                  <h2 className={style.font} >Registro</h2>
+                  <div className={style.font}  >Completa los campos por favor</div>
                   <Form
                   nombre = {nombreRegistro}
                   />
-                  <button onClick={closeModal}>cerrar</button>
+                  <button className={style.btnClose} onClick={closeModal}>cerrar</button>
               </Modal>
             </div>
             <div className={style.searchBar} >

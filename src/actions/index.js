@@ -21,7 +21,6 @@ export function createItem(obj){
         try {
             const colRef = collection(db, 'empresas');
             const data = await addDoc(colRef, obj);
-            console.log('data :>> ', data);
             if(data.id){
                 Swal.fire({
                     icon: 'success',

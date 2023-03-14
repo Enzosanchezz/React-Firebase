@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { createItem } from '../../actions';
+import style from "./form.module.css";
 
 
 export default function Form(name) {
@@ -39,25 +40,25 @@ export default function Form(name) {
   return (
 
 
-    <form onSubmit={e => handleSubmit(e)}>
+    <form className={style.form} onSubmit={e => handleSubmit(e)}>
              
         <label>Nombre:</label>
-        <input type="text" value={empresa.nombre} name="nombre" onChange={e => handleChange(e)} ></input>
+        <input type="text" value={empresa.nombre} name="nombre" required onChange={e => handleChange(e)} ></input>
 
         <label>Razon Social:</label>
-        <input type="text" name="razonSocial" onChange={e => handleChange(e)} ></input>
+        <input type="text" name="razonSocial" required onChange={e => handleChange(e)} ></input>
 
         <label>Nit:</label>
-        <input type="number" name="nit" onChange={e => handleChange(e)} ></input>
+        <input type="number" name="nit" required min={0} onChange={e => handleChange(e)} ></input>
 
         <label>Telefono:</label>
-        <input type="number" name="telefono" onChange={e => handleChange(e)} ></input>
+        <input type="number" name="telefono" required min={0} onChange={e => handleChange(e)} ></input>
 
         <label>Codigo:</label>
-        <input type="number" name="codigo" onChange={e => handleChange(e)} ></input>
+        <input type="number" name="codigo" required min={0} onChange={e => handleChange(e)} ></input>
 
 
-        <button type="submit">Registrar Empresa</button>
+        <button className={style.regis} type="submit">Registrar Empresa</button>
 
     </form>
   )
